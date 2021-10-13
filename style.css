@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Courgette&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 70%;
+    border: 2px solid white;
+    border-radius: 50px;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+}
+.nav-list{
+width: 50%;
+/*background-color: yellow;*/
+display: flex;
+align-items: center;
+
+}
+.nav-list li{
+    list-style: none;
+padding: 26px 30px;
+
+
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: white;
+    
+
+
+}
+.rightNav{
+  /*  background-color: rgb(107, 107, 124);*/
+    width: 50%;
+    text-align: right;
+    padding: 20px;
+
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+
+}
+.background{
+    background-image: url('background3.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 70%;
+
+}
+.firstHalf{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+.secondHalf{
+    width: 30%;
+
+}
+.secondHalf img{
+    width: 95%;
+    border: 2px solid white;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+
+
+}
+.text-big{
+    font-size: 28px;
+    color: brown;
+    font-family: 'Courgette', cursive;
+    
+
+}
+.text-small{
+    font-size: 20px;
+    padding: 20px;
+    font-family: 'Calligraffitti', cursive;
+
+}
+.btn{
+    padding: 8px 20px;
+    margin: 5px 2px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 13px;
+    background: wheat;
+    color: black;
+    cursor: pointer;
+    font-family:'Ubuntu', sans-serif ;
+
+}
+
+
+.btn-sm{
+    padding: 4px 7px;
+    vertical-align: middle;
+
+}
+.section{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.paras{
+    padding: 0px 60px;
+}
+.section-Left{
+    flex-direction: row-reverse;
+
+}
+.sectionTag{
+    font-size: 25px;
+    padding: 16px 0px;
+}
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.imgFluid{
+    width: 390px;
+    border: 1px solid black;
+    border-radius: 18px;
+}
+.contact{
+    background-color: wheat;
+    height: 80vh;
+}
+.text-center{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form{
+    max-width: 40%;
+    margin: 40px auto;
+}
+.form input{
+    width: 360px ;
+    margin: 14px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 2px solid gray;
+     
+
+}
+.btn-submit{
+    color: black;
+    border: 1px solid black;
+    background-color: bisque;
+}
+.box-btn{
+    width: 100px;
+  height: 90px;
+  padding: 30px;
+  border: 1px solid black;
+  
+}
+.text-footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 7px 0px;
+    color:black;
+}
+.burger{
+position: absolute;
+cursor: pointer;
+right: 3%;
+top: 12px;
+display: none;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 2px;
+}
+@media only screen and (max-width: 1130px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 400px;
+
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+       
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px; 
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .section{
+        flex-direction: column-reverse;
+
+    }
+    .text-big{
+    text-align: center;
+    }
+    .text-small{
+     text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    
+    .paras{
+        padding: 0px;
+        text-align: left;
+    }
+}
